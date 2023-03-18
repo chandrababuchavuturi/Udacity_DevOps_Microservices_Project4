@@ -120,3 +120,16 @@ Your code has been rated at 10.00/10
 
 That's about it! When working with kubernetes, you may need to install some other libraries, but these instructions will set you up with an environment that can build and deploy Docker containers.
 
+Directory Structure
+Directory/File	Description
+.circleci/config.yml	CircleCI configuration
+model_data	Trained model data for housing prices in Boston
+output_txt_files	Docker and Kubernetes log output
+app.py	REST Endpoint for predicting housing prices in Boston
+Dockerfile	Dockerfile containing the application and its dependencies
+make_prediction.sh	Calls prediction REST endpoint and simulates sample prediction
+Makefile	Build file of the project
+requirements.txt	Python requirements
+run_docker.sh	Shell script for creating and running docker container
+run_kubernetes.sh	Shell script to deploy docker container on Kubernetes cluster
+upload_docker.sh	Shell script for uploading locally built docker image to dockerhub repository
