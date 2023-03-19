@@ -8,7 +8,7 @@ jobs:
     docker:
       # Use the same Docker base as the project
       - image: python:3.7.3-stretch
-    working_directory: ~/repo
+    working_directory: .
     steps:
       - checkout
       - restore_cache:
@@ -32,4 +32,4 @@ jobs:
           name: run lint
           command: |
             . venv/bin/activate
-            make lint            
+            make lint
