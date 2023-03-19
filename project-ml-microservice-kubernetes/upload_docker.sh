@@ -6,10 +6,13 @@
 # Step 1:
 # Create dockerpath
 # dockerpath=<your docker ID/path>
-
+dockerpath="chandrababuchavuturi/microservicesudacity"
 # Step 2:  
 # Authenticate & tag
+docker login
+docker tag microservicesudacity $dockerpath
 echo "Docker ID and Image: $dockerpath"
 
 # Step 3:
 # Push image to a docker repository
+docker push $dockerpath

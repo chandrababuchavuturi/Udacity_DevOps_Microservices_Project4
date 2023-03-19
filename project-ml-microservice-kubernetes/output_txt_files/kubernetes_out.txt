@@ -1,1 +1,9 @@
-<paste log output from Kubernetes-mediated prediction, here>
+pod/microservicesudacity created
+pod/microservicesudacity condition met
+NAME                   READY   STATUS    RESTARTS   AGE
+microservicesudacity   1/1     Running   0          30s
+Forwarding from 127.0.0.1:8080 -> 80
+Forwarding from [::1]:8080 -> 80
+Handling connection for 8080
+Handling connection for 8080
+Handling connection for 8080
